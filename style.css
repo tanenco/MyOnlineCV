@@ -14,6 +14,31 @@ body {
   float: right;
 }
 
+.header_area {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.header_area h3 {
+  padding: 10px;
+}
+
+.basic_info li {
+    margin-bottom: 15px;
+  }
+
+.basic_info a {
+    position: relative;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+
+.basic_info img {
+  height: 20px;
+}
+
 .cvinfo {
   width: 65%;
   height: 100vh;
