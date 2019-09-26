@@ -5,18 +5,20 @@
 }
 
 body {
-  background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+  background-image: -webkit-linear-gradient(0deg, #00ad7c 0%, #88f3ff 100%);
   font-family: sans-serif;
 }
 
 .photo {
-  padding: 100px;
+  padding-left: 20px;
   float: right;
 }
 
 .header_area {
   text-align: center;
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .header_area h3 {
@@ -24,36 +26,54 @@ body {
 }
 
 .basic_info li {
-    margin-bottom: 15px;
-  }
-
-.basic_info a {
     position: relative;
     padding: 10px;
     font-size: 16px;
     color: black;
     text-decoration: none;
+    list-style: none;
   }
+
+.basic_info li:hover {
+  color: blue;
+}
 
 .basic_info img {
   height: 20px;
 }
 
 .cvinfo {
-  width: 65%;
-  height: 100vh;
-  float: left;
   padding: 0 30px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cvinfo h1 {
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
 .cvinfo h2 {
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.cveducation {
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cveducation h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .status {
@@ -71,9 +91,9 @@ body {
 
 .experience {
   display: inline-block;
-  width: 70%;
+  width: 50%;
   padding: 10px 10px;
-  margin: 2%;
+  margin: 1.5%;
   text-align: center;
   box-shadow: - - 15px 1px rgba(37, 73, 214, 0.18);
   background: #fff;
@@ -89,8 +109,26 @@ body {
 .experience h3 {
   padding-bottom: 10px;
 }
+.experience h3:hover {
+  color: blue;
+}
 .experience h4 {
   padding-bottom: 10px;
+}
+.experience small {
+  font-size: 16px;
+  color: blue;
+}
+
+.education {
+  display: inline-block;
+  width: 50%;
+  padding: 10px 10px;
+  margin: 1%;
+  text-align: center;
+  box-shadow: - - 15px 1px rgba(37, 73, 214, 0.18);
+  background: #fff;
+  border-radius: 10px;
 }
 
 .hvr-grow-shadow {
