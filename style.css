@@ -9,11 +9,6 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-.photo {
-  padding-left: 20px;
-  float: right;
-}
-
 .header_area {
   text-align: center;
   color: #00203FFF;
@@ -55,16 +50,6 @@ body {
   align-items: center;
 }
 
-.cvinfo h2 {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 2px solid #00203FFF;
-  border-radius: 10px;
-  background-color: white;
-  color: #00203FFF;
-}
-
 .cveducation {
   padding: 0 30px;
   text-align: center;
@@ -73,14 +58,8 @@ body {
   align-items: center;
 }
 
-.cveducation h2 {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 2px solid #00203FFF;
-  border-radius: 10px;
-  background-color: white;
-  color: #00203FFF;
+.cveducation h3 {
+  font-size: 25px;
 }
 
 .cvskills {
@@ -89,16 +68,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.cvskills h2 {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 2px solid #00203FFF;
-  border-radius: 10px;
-  background-color: white;
-  color: #00203FFF;
 }
 
 .status {
@@ -134,16 +103,23 @@ body {
 }
 .experience h3 {
   padding-bottom: 10px;
+  font-size: 30px;
 }
 .experience h3:hover {
   color: blue;
 }
 .experience h4 {
   padding-bottom: 10px;
+  font-size: 25px;
 }
 small {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
   color: blue;
+}
+
+.cvskills small {
+  font-size: 14px;
 }
 
 .education {
@@ -172,6 +148,7 @@ small {
 
 .skills h3 {
   padding-bottom: 5px;
+  font-size: 20px;
 }
 
 table, td, th {
@@ -255,4 +232,52 @@ table, td, th {
   left:0;
   top:0;
   margin-left: 30px;
+  border-radius: 10px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ADEFD1FF;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.navbar li {
+  float: left;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.navbar h2:hover {
+  background-color: #00203FFF;
+  color: #ADEFD1FF;
+}
+.navbar a:hover, a.active {
+  background-color: #00203FFF;
+  color: #ADEFD1FF;
+}
+
+.navbar h2 {
+  padding: 10px;
+  border: 2px solid #00203FFF;
+  border-radius: 10px;
+  background-color: white;
+  color: #00203FFF;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

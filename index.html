@@ -17,7 +17,7 @@
       <div class="personal">
         <ul class="basic_info">
           <li><img src="https://img.icons8.com/android/50/000000/calendar.png"> Date of birth: 03 October, 1986</li>
-          <li><img src="https://img.icons8.com/ios-filled/50/000000/phone.png"> 0740 081 623</li>
+          <li><img src="https://img.icons8.com/ios-filled/50/000000/phone.png"> 0740.081.623</li>
           <li><img src="https://img.icons8.com/material/24/000000/filled-message--v1.png"> andreiturcas86@yahoo.com</li>
           <li><img src="https://img.icons8.com/material-outlined/50/000000/home--v1.png"> Al. Snagov, nr.5, ap.35, Cluj-Napoca</li>
         </ul>
@@ -38,8 +38,14 @@
     </div>
   </header>
 
-  <div class="cvinfo">
-    <h2>Work Experience</h2>
+  <ul class="navbar">
+    <li><a onclick="clicked(this)" class="menubutton" href="#work"><h2>Work Experience</h2></a></li>
+    <li><a onclick="clicked(this)" class="menubutton" href="#education"><h2>Education and Training</h2></a></li>
+    <li><a onclick="clicked(this)" class="menubutton" href="#personal"><h2>Personal Skills</h2></a></li>
+  </ul>
+
+  <div class="cvinfo" id="work">
+    <br><br><br><br><br>
     <div class="experience hvr-grow-shadow">
       <img src="images/ty.png" width="120" height="120" alt="ty">
       <h3><b>Data Entry Specialist</b></h3>
@@ -82,8 +88,8 @@
     </div>
   </div>
 
-  <div class="cveducation">
-    <h2>Education and Training</h2>
+  <div class="cveducation" id="education">
+    <br><br><br><br><br>
     <div class="education hvr-grow-shadow">
       <h3><b>Course Front-end Web Development (JavaScript)</b></h3>
       <h4>The Informal School of IT</h4>
@@ -106,8 +112,8 @@
     </div>
   </div>
 
-  <div class="cvskills">
-    <h2>Personal Skills</h2>
+  <div class="cvskills" id="personal">
+    <br><br><br><br><br>
     <div class="skills hvr-grow-shadow">
       <h3><b>Mother tongue:</b> Romanian</h3>
       <h3><b>Foreign language:</b> English</h3>
@@ -170,6 +176,14 @@
       <small><a href="https://europass.cedefop.europa.eu/resources/digital-competences">Digital skills - Self-assessment grid</a></small>
     </div>
   </div>
+
+  <br><br><br><br><br>
+  <footer>
+    <p>Created by: Andrei-Alexandru Țurcaș</p>
+    <p>Contact info: <a href="mailto:tanenco@yahoo.com">andreiturcas86@yahoo.com</a></p>
+    <p>Phone: 0740.081.623</p>
+    <p>2019</p>
+  </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="script.js"></script>

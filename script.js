@@ -22,3 +22,15 @@ $(function(){
          .end().appendTo('.slideshow');},
       5000);
 });
+
+function clicked(a)
+{
+    items = document.querySelectorAll('.menubutton.active');
+
+    if(items.length)
+    {
+        items[0].className = 'menubutton';
+    }
+
+    a.className = 'menubutton active';
+}
