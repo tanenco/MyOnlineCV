@@ -14,23 +14,19 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-$(function(){
+$(function() {
     $('.slideshow img:gt(0)').hide();
-    setInterval(function(){
+    setInterval(function() {
       $('.slideshow :first-child').fadeOut()
          .next('img').fadeIn()
-         .end().appendTo('.slideshow');},
-      5000);
+         .end().appendTo('.slideshow');
+       }, 5000);
 });
 
-function clicked(a)
-{
+function clicked(a) {
     items = document.querySelectorAll('.menubutton.active');
-
-    if(items.length)
-    {
+    if(items.length) {
         items[0].className = 'menubutton';
     }
-
     a.className = 'menubutton active';
 }
